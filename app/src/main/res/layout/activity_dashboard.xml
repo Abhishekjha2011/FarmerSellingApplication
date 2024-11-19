@@ -1,0 +1,554 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/productTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farmer Product Item"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_columnSpan="2"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/productImage1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/apple"
+                android:contentDescription="Apple image" />
+
+            <TextView
+                android:id="@+id/productName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/productPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 120"
+                android:textSize="14sp"
+                android:gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/minusButton1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_minus"
+                    android:contentDescription="Minus Button"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/quantityText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/addButton1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="Plus Button"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/productImage2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banana"
+                android:contentDescription="Banana image" />
+
+            <TextView
+                android:id="@+id/productName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banana"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/productPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 60"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/minusButton2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_minus"
+                    android:contentDescription="Minus Button"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/quantityText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/addButton2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="Plus Button"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/productImage3"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chilli"
+                android:contentDescription="Chilli image" />
+
+            <TextView
+                android:id="@+id/productName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chilli"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/productPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 10"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/minusButton3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_minus"
+                    android:contentDescription="Minus Button"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/quantityText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/addButton3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="Plus Button"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/productImage4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/potato"
+                android:contentDescription="Potato image" />
+
+            <TextView
+                android:id="@+id/productName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Potato"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/productPrice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 80"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/minusButton4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_minus"
+                    android:contentDescription="Minus Button"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/quantityText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/addButton4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="Plus Button"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/productImage5"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/onion"
+                android:contentDescription="Onion image" />
+
+            <TextView
+                android:id="@+id/productName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Onion"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/productPrice5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 120"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/minusButton5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_minus"
+                    android:contentDescription="Minus Button"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/quantityText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/addButton5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="Plus Button"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/productImage6"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carrot"
+                android:contentDescription="Carrot image" />
+
+            <TextView
+                android:id="@+id/productName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carrot"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/productPrice6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 60"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/minusButton6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_minus"
+                    android:contentDescription="Minus Button"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/quantityText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/addButton6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="Plus Button"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/productImage7"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/grapes"
+                android:contentDescription="Grapes image" />
+
+            <TextView
+                android:id="@+id/productName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grapes"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/productPrice7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 50"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/minusButton7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_minus"
+                    android:contentDescription="Minus Button"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/quantityText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/addButton7"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="Plus Button"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/productImage8"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tomato"
+                android:contentDescription="Tomato image" />
+
+            <TextView
+                android:id="@+id/productName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomato"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/productPrice8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 40"
+                android:textSize="14sp"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/minusButton8"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_minus"
+                    android:contentDescription="Minus Button"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/quantityText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:id="@+id/addButton8"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_plus"
+                    android:contentDescription="Plus Button"
+                    android:padding="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/viewCartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Cart"
+            android:layout_rowSpan="2"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_columnSpan="2"
+            android:padding="12dp"/>
+
+    </GridLayout>
+</ScrollView>
